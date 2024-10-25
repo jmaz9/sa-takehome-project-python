@@ -9,8 +9,12 @@
     </h1>
   </div>
   <div class="mt-40 text-center">
-    <div class="mt-20 text-center text-secondary border-placeholder">
-      Add details about the payment here!
+    <p>Thank you for your purchase!</p>
+    
+
+    <div class="mt-20 text-center text-secondary">
+      <p><strong>Amount Charged:</strong> ${{ amount | float / 100 }}</p> <!-- Convert cents to dollars -->
+      <p><strong>Payment Intent ID:</strong> {{ payment_intent }}</p>
     </div>
   </div>
 </main>
